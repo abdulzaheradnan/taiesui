@@ -38,7 +38,7 @@ export default function Insideform69() {
     return (
         <Form method='post'>
 
-            <div className='mx-auto w-[1080px] h-[2320px]  rounded-lg '>
+            <div className='mx-auto w-[1080px] h-[2350px]  rounded-lg '>
                 <div className='w-[1079px] h-[200px] border-2 border-white bg-gradient-to-r  from-[#a9a5a5] from-36% via-pink-300 via-72% to-[#a64cadb3] to-100%  rounded-t-lg'>
                     <div className=' bg-cover bg-full w-[100px] h-[100px] rounded-full mx-auto mt-[30px] border-2 bg-center bg-[url("https://t4.ftcdn.net/jpg/04/62/88/97/360_F_462889752_tSWP7qDYpUIL6QRlbyIC8v68jaXwVXyx.jpg")] text-center'  >
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 mx-auto mt-7 text-white" >
@@ -59,8 +59,8 @@ export default function Insideform69() {
                             <input type="text" className='border-2 w-[500px] h-[42px] rounded-lg mt-2 pl-2' placeholder='ABCD002' name='employeid' />
                         </div>
                         <div>
-                            <span className='font-semibold'>Title</span> 
-                             <span className='text-red-600'> {actiondata?.error?.title ? `* ${actiondata?.error?.title}` : <></>}</span>
+                            <span className='font-semibold'>Title</span>
+                            <span className='text-red-600'> {actiondata?.error?.title ? `* ${actiondata?.error?.title}` : <></>}</span>
 
                             <select type="select" className='border-2  w-[500px] h-[42px] rounded-lg mt-2  pl-2 pr-2' name='title' >
                                 <option value="" className='pr-2'>select</option>
@@ -69,39 +69,39 @@ export default function Insideform69() {
 
                         </div>
                         <div>
-                            <div className='font-semibold'>First Name</div>
+                            <span className='font-semibold'>First Name</span>
+                            <span className='text-red-600'> {actiondata?.error?.firstname ? `* ${actiondata?.error?.firstname}` : <></>}</span>
                             <input type="text" className='border-2 w-[500px] h-[42px] rounded-lg mt-2  pl-2' placeholder='anslie' name='firstname' />
-                            <span className='text-red-600'>{actiondata?.error ? actiondata?.error?.firstname : " "}</span>
 
                         </div>
                         <div>
-                            <div className='font-semibold'>Middle Name</div>
+                            <span className='font-semibold'>Middle Name</span>
+                            <span className='text-red-600'> {actiondata?.error?.middlename ? `* ${actiondata?.error?.middlename}` : <></>}</span>
                             <input type="text" className='border-2  w-[500px] h-[42px] rounded-lg mt-2  pl-2' placeholder='Middle name' name='middlename' />
-                            <span className='text-red-600'>{actiondata?.error ? actiondata?.error?.middlename : " "}</span>
 
                         </div> <div>
-                            <div className='font-semibold'>Last Name</div>
+                            <span className='font-semibold'>Last Name</span>
+                            <span className='text-red-600'> {actiondata?.error?.lastname ? `* ${actiondata?.error?.lastname}` : <></>}</span>
                             <input type="text" className='border-2 w-[500px] h-[42px] rounded-lg mt-2  pl-2' placeholder='smith' name='lastname' />
-                            <span className='text-red-600'>{actiondata?.error ? actiondata?.error?.lastname : " "}</span>
 
                         </div>
                         <div>
-                            <div className='font-semibold'>Email Address</div>
+                            <span className='font-semibold'>Email</span>
+                            <span className='text-red-600'> {actiondata?.error?.email ? `* ${actiondata?.error?.email}` : <></>}</span>
                             <input type="text" className='border-2  w-[500px] h-[42px] rounded-lg mt-2  pl-2' placeholder='anslie.s@company.com' name='email' />
-                            <span className='text-red-600'>{actiondata?.error ? actiondata?.error?.email : " "}</span>
 
 
                         </div>
                         <div>
-                            <div className='font-semibold'>Phone Number</div>
+                            <span className='font-semibold'>Phone Number</span>
+                            <span className='text-red-600'> {actiondata?.error?.phone ? `* ${actiondata?.error?.phone}` : <></>}</span>
                             <input type="text" className='border-2 w-[500px] h-[42px] rounded-lg mt-2  pl-2' name='phone' />
-                            <span className='text-red-600'>{actiondata?.error ? actiondata?.error?.phone : " "}</span>
 
                         </div>
                         <div>
-                            <div className='font-semibold'>Nationality</div>
+                            <span className='font-semibold'>Nationality</span>
+                            <span className='text-red-600'> {actiondata?.error?.nationality ? `* ${actiondata?.error?.nationality}` : <></>}</span>
                             <input type="text" className='border-2  w-[500px] h-[42px] rounded-lg mt-2  pl-2' placeholder='British citizen' name='nationality' />
-                            <span className='text-red-600'>{actiondata?.error ? actiondata?.error?.nationality : " "}</span>
 
 
                         </div>
@@ -110,74 +110,78 @@ export default function Insideform69() {
                     <div className='w-[196px] h-[28px]  text-2xl text-center font-semibold mt-2'>work Information</div>
                     <div className='grid grid-cols-2 gap-3 mt-4'>
                         <div>
-                            <div className='font-semibold'>Department</div>
-                            <input type="text" className='border-2 w-[500px] h-[42px] rounded-lg mt-2 pl-2' placeholder='It Project Management/PMO' name='department' />
-                            <span className='text-red-600'>{actiondata?.error ? actiondata?.error?.department : " "}</span>
+                            <span className='font-semibold'>Department</span>
+                            <span className='text-red-600'> {actiondata?.error?.department ? `* ${actiondata?.error?.department}` : <></>}</span>
+                            <select type="text" className='border-2 w-[500px] h-[42px] rounded-lg mt-2 pl-2' placeholder='It Project Management/PMO' name='department' >
+                                <option value=""></option>
+                            </select>
 
                         </div>
                         <div>
-                            <div className='font-semibold'>Team</div>
-                            <input type="text" className='border-2  w-[500px] h-[42px] rounded-lg mt-2 pl-2' placeholder='IT' name='team' />
-                            <span className='text-red-600'>{actiondata?.error ? actiondata?.error?.team : " "}</span>
+                            <span className='font-semibold'>Team</span>
+                            <span className='text-red-600'> {actiondata?.error?.team ? `* ${actiondata?.error?.team}` : <></>}</span>
+                            <select type="text" className='border-2  w-[500px] h-[42px] rounded-lg mt-2 pl-2' placeholder='IT' name='team' >
+                                <option value=""></option>
+                            </select>
 
 
                         </div>
                         <div>
-                            <div className='font-semibold'>Project</div>
+                            <span className='font-semibold'>Project</span>
+                            <span className='text-red-600'> {actiondata?.error?.project ? `* ${actiondata?.error?.project}` : <></>}</span>
                             <input type="text" className='border-2 w-[500px] h-[42px] rounded-lg mt-2 pl-2' placeholder='ISS HRMS' name='project' />
-                            <span className='text-red-600'>{actiondata?.error ? actiondata?.error?.project : " "}</span>
 
                         </div>
                         <div>
-                            <div className='font-semibold'>Designation</div>
+                            <span className='font-semibold'>Designation</span>
+                            <span className='text-red-600'> {actiondata?.error?.designation ? `* ${actiondata?.error?.designation}` : <></>}</span>
                             <input type="text" className='border-2  w-[500px] h-[42px] rounded-lg mt-2 pl-2' placeholder='Project manager' name='designation' />
-                            <span className='text-red-600'>{actiondata?.error ? actiondata?.error?.designation : " "}</span>
 
 
                         </div>
                         <div>
-                            <div className='font-semibold'>Rank/Grade</div>
+                            <span className='font-semibold'>Rank/Grade</span>
+                            <span className='text-red-600'> {actiondata?.error?.rank ? `* ${actiondata?.error?.rank}` : <></>}</span>
                             <input type="text" className='border-2 w-[500px] h-[42px] rounded-lg mt-2 pl-2' placeholder='B' name='rank' />
-                            <span className='text-red-600'>{actiondata?.error ? actiondata?.error?.rank : " "}</span>
 
                         </div>
                         <div>
-                            <div className='font-semibold'> Salery</div>
+                            <span className='font-semibold'>Salery</span>
+                            <span className='text-red-600'> {actiondata?.error?.salery ? `* ${actiondata?.error?.salery}` : <></>}</span>
                             <input type="text" className='border-2  w-[500px] h-[42px] rounded-lg mt-2 pl-2' placeholder='$2500' name='salery' />
-                            <span className='text-red-600'>{actiondata?.error ? actiondata?.error?.salery : " "}</span>
 
 
                         </div>
                         <div>
-                            <div className='font-semibold'>No.of Holiday</div>
+                            <span className='font-semibold'>No.of Holidays</span>
+                            <span className='text-red-600'> {actiondata?.error?.holiday ? `* ${actiondata?.error?.holiday}` : <></>}</span>
                             <input type="text" className='border-2 w-[500px] h-[42px] rounded-lg mt-2 pl-2' placeholder='18' name='holiday' />
-                            <span className='text-red-600'>{actiondata?.error ? actiondata?.error?.holiday : " "}</span>
 
                         </div>
                         <div>
-                            <div className='font-semibold'>Date of joining</div>
+                            <span className='font-semibold'>Date of Joining</span>
+                            <span className='text-red-600'> {actiondata?.error?.dateofjoin ? `* ${actiondata?.error?.dateofjoin}` : <></>}</span>
                             <input type="date" className='border-2  w-[500px] h-[42px] rounded-lg mt-2 pl-2 pr-2' placeholder='24-june-2024' min={maxdate2} name='dateofjoin' />
-                            <span className='text-red-600'>{actiondata?.error ? actiondata?.error?.dateofjoin : " "}</span>
 
 
                         </div>
                         <div>
-                            <div className='font-semibold'>Date of Application</div>
+                            <span className='font-semibold'>Date of Application</span>
+                            <span className='text-red-600'> {actiondata?.error?.dateofapplication ? `* ${actiondata?.error?.dateofapplication}` : <></>}</span>
                             <input type="date" className='border-2 w-[500px] h-[42px] rounded-lg mt-2 pl-2 pr-2' placeholder='12-june-2024' max={maxdate} name='dateofapplication' />
-                            <span className='text-red-600'>{actiondata?.error ? actiondata?.error?.dateofapplication : " "}</span>
 
                         </div>
                         <div>
-                            <div className='font-semibold'>Date of Interview</div>
+                            <span className='font-semibold'>Date of Interview</span>
+                            <span className='text-red-600'> {actiondata?.error?.dateofinterview ? `* ${actiondata?.error?.dateofinterview}` : <></>}</span>
                             <input type="date" className='border-2  w-[500px] h-[42px] rounded-lg mt-2 pl-2 pr-2' placeholder='16-june-2024' max={maxdate} name='dateofinterview' />
-                            <span className='text-red-600'>{actiondata?.error ? actiondata?.error?.dateofinterview : " "}</span>
 
 
                         </div>
                         <div>
-                            <div className='font-semibold'>Date of Selection</div>
+                            <span className='font-semibold'>Date of Selection</span>
+                            <span className='text-red-600'> {actiondata?.error?.dateofselection ? `* ${actiondata?.error?.dateofselection}` : <></>}</span>
                             <input type="date" className='border-2  w-[500px] h-[42px] rounded-lg mt-2 pl-2 pr-2' placeholder='18-june-2024' max={maxdate} name='dateofselection' />
-                            <span className='text-red-600'>{actiondata?.error ? actiondata?.error?.dateofselection : " "}</span>
 
 
                         </div>
@@ -200,9 +204,9 @@ export default function Insideform69() {
                     <div className='grid grid-cols-2 gap-3 mt-6'>
 
                         <div>
-                            <div className='font-semibold'>Reporting Manager</div>
+                            <span className='font-semibold'>Reporting Manager</span>
+                            <span className='text-red-600'> {actiondata?.error?.reportingmanager ? `* ${actiondata?.error?.reportingmanager}` : <></>}</span>
                             <input type="text" className='border-2  w-[500px] h-[42px] rounded-lg mt-2 pl-2' placeholder='CEO' name='reportingmanager' />
-                            <span className='text-red-600'>{actiondata?.error ? actiondata?.error?.reportingmanager : " "}</span>
 
 
                         </div>
@@ -212,30 +216,30 @@ export default function Insideform69() {
                     <div className='grid grid-cols-2 gap-3 mt-6'>
 
                         <div>
-                            <div className='font-semibold'>Date of Birth</div>
+                            <span className='font-semibold'>Date of Birth</span>
+                            <span className='text-red-600'> {actiondata?.error?.dateofbirth ? `* ${actiondata?.error?.dateofbirth}` : <></>}</span>
                             <input type="text" className='border-2  w-[500px] h-[42px] rounded-lg mt-2 pl-2' placeholder='5-june-1994' name='dateofbirth' />
-                            <span className='text-red-600'>{actiondata?.error ? actiondata?.error?.dateofbirth : " "}</span>
 
 
                         </div>
                         <div>
-                            <div className='font-semibold'>Gender</div>
+                            <span className='font-semibold'>Gender</span>
+                            <span className='text-red-600'> {actiondata?.error?.gender ? `* ${actiondata?.error?.gender}` : <></>}</span>
                             <input type="text" className='border-2  w-[500px] h-[42px] rounded-lg mt-2 pl-2' placeholder='male' name='gender' />
-                            <span className='text-red-600'>{actiondata?.error ? actiondata?.error?.gender : " "}</span>
 
 
                         </div>
                         <div>
-                            <div className='font-semibold'>Marital Status</div>
+                            <span className='font-semibold'>Merital Status</span>
+                            <span className='text-red-600'> {actiondata?.error?.meritalstatus ? `* ${actiondata?.error?.meritalstatus}` : <></>}</span>
                             <input type="text" className='border-2  w-[500px] h-[42px] rounded-lg mt-2 pl-2' placeholder='married' name='maritalstatus' />
-                            <span className='text-red-600'>{actiondata?.error ? actiondata?.error?.meritalstatus : " "}</span>
 
 
                         </div>
                         <div>
-                            <div className='font-semibold'>National Insurance Number</div>
+                            <span className='font-semibold'>National Insurance Number</span>
+                            <span className='text-red-600'> {actiondata?.error?.insurancenumber ? `* ${actiondata?.error?.insurancenumber}` : <></>}</span>
                             <input type="text" className='border-2  w-[500px] h-[42px] rounded-lg mt-2 pl-2' placeholder='ABC12345' name='insurancenumber' />
-                            <span className='text-red-600'>{actiondata?.error ? actiondata?.error?.insurancenumber : " "}</span>
 
 
                         </div>
@@ -300,41 +304,41 @@ export default function Insideform69() {
                     <div className='w-[455PX] h-[28px]  text-2xl text-center font-semibold mt-4 '>Next of kin (Emergency Contact Details)</div>
                     <div className='grid grid-cols-2 gap-3 mt-4'>
                         <div>
-                            <div className='font-semibold'>First Name </div>
+                            <span className='font-semibold'>First Name</span>
+                            <span className='text-red-600'> {actiondata?.error?.firstname2 ? `* ${actiondata?.error?.firstname2}` : <></>}</span>
                             <input type="text" className='border-2  w-[500px] h-[42px] rounded-lg mt-2 pl-2' placeholder='first name' name='firstname2' />
-                            <span className='text-red-600'>{actiondata?.error ? actiondata?.error?.firstname2 : " "}</span>
 
 
                         </div>  <div>
-                            <div className='font-semibold'>Last Name</div>
+                            <span className='font-semibold'>Last Name</span>
+                            <span className='text-red-600'> {actiondata?.error?.lastname2 ? `* ${actiondata?.error?.lastname2}` : <></>}</span>
                             <input type="text" className='border-2  w-[500px] h-[42px] rounded-lg mt-2 pl-2' placeholder='last name' name='lastname2' />
-                            <span className='text-red-600'>{actiondata?.error ? actiondata?.error?.lastname2 : " "}</span>
 
 
                         </div>
                         <div>
-                            <div className='font-semibold'>Email</div>
+                            <span className='font-semibold'>Email</span>
+                            <span className='text-red-600'> {actiondata?.error?.email ? `* ${actiondata?.error?.email}` : <></>}</span>
                             <input type="text" className='border-2  w-[500px] h-[42px] rounded-lg mt-2 pl-2' placeholder='email' name='email2' />
-                            <span className='text-red-600'>{actiondata?.error ? actiondata?.error?.email2 : " "}</span>
 
 
                         </div>
                         <div>
-                            <div className='font-semibold'>Phone Number</div>
+                            <span className='font-semibold'>Phone Number</span>
+                            <span className='text-red-600'> {actiondata?.error?.phone2 ? `* ${actiondata?.error?.phone2}` : <></>}</span>
                             <input type="text" className='border-2  w-[500px] h-[42px] rounded-lg mt-2 pl-2' placeholder='phone number' name='phone2' />
-                            <span className='text-red-600'>{actiondata?.error ? actiondata?.error?.phone2 : " "}</span>
 
 
                         </div>
                         <div>
-                            <div className='font-semibold'>Relation</div>
+                            <span className='font-semibold'>Relation</span>
+                            <span className='text-red-600'> {actiondata?.error?.relation ? `* ${actiondata?.error?.relation}` : <></>}</span>
                             <select type="text" className='border-2  w-[500px] h-[42px] rounded-lg mt-2 pl-2' placeholder='ABC12345' name='relation'>
                                 <option value="">select</option>
                                 <option value="married">married</option>
                                 <option value="unmarried">unmarried</option>
 
                             </select>
-                            <span className='text-red-600'>{actiondata?.error ? actiondata?.error?.relation : " "}</span>
 
 
                         </div>
@@ -388,7 +392,7 @@ export const action = async ({ request }: ActionFunctionArgs) => {
         dateofbirth: z.string().min(5, "Date of birth need 5 character"),
         gender: z.string().min(3, "Gender required"),
         meritalstatus: z.string().min(4, "Merital status required"),
-        insurancenumber: z.string().min(5, "Insurance Number need 5 character"),
+        insurancenumber: z.string().min(7, "Insurance Number need 7 character"),
         roadnumber: z.string().min(5, "Road Number required 5 characters"),
         roadname: z.string().min(5, "Road Name required 5 characters"),
         sale: z.string().min(4, "Sale Required"),

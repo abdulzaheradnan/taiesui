@@ -15,7 +15,15 @@ import Screen31 from "./screen31";
 import Screen3 from "./screen3";
 import Basicinformation2 from "./basicinformation";
 import Screen69 from "./screen69";
-
+import Pdffiles from "./pdffiles";
+import Pdfreaderfile  from "./Pdfreaderfile";
+import Screen5 from "./screen5";
+import Screen14 from "./screen14";
+import Screen12 from "./screen12";
+import Screen19two from "./screen18.screen19two"
+import Screen18 from "./screen18";
+import Screen84 from "./screen84"
+import Screen85 from "./screen85";
 
 export const meta: MetaFunction = () => {
   return [
@@ -29,7 +37,9 @@ export default function Index() {
     
   return (
     <div className="background-black">
-      <Screen69></Screen69>
+      <Screen85></Screen85>
+      {/* <Pdffiles></Pdffiles><br /> */}
+      {/* <Screen5></Screen5> */}
       {/* <Task1></Task1> */}
      {/* <Link to="/form">go to form</Link> */}
      {/* <Formcomponent></Formcomponent> */}
